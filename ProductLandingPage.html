@@ -1,0 +1,175 @@
+<!-- 
+User Story #1: My product landing page should have a header element with a corresponding id="header".
+User Story #2: I can see an image within the header element with a corresponding id="header-img". A company logo would make a good image here.
+User Story #3: Within the #header element I can see a nav element with a corresponding id="nav-bar".
+User Story #4: I can see at least three clickable elements inside the nav element, each with the class nav-link.
+User Story #5: When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page.
+User Story #6: I can watch an embedded product video with id="video".
+User Story #7: My landing page has a form element with a corresponding id="form".
+User Story #8: Within the form, there is an input field with id="email" where I can enter an email address.
+User Story #9: The #email input field should have placeholder text to let the user know what the field is for.
+User Story #10: The #email input field uses HTML5 validation to confirm that the entered text is an email address.
+User Story #11: Within the form, there is a submit input with a corresponding id="submit".
+User Story #12: When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit) that confirms the email address was entered and that it posted successfully.
+User Story #13: The navbar should always be at the top of the viewport.
+User Story #14: My product landing page should have at least one media query.
+User Story #15: My product landing page should utilize CSS flexbox at least once.
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link rel="stylesheet" href="ProductLandingPage.css">
+     <link href="https://fonts.googleapis.com/css?family=Cantarell:400i|Courgette|Niconne&display=swap" rel="stylesheet">
+     <script src="https://kit.fontawesome.com/778819cbd0.js"></script>
+     <title>Coffee Express</title>
+ </head>
+ <body>
+     <!-- <div class="parallax"></div> -->
+     <header id="header">
+         <div class="bg-img"></div>
+         <img id="header-img" src="https://images.unsplash.com/photo-1459755486867-b55449bb39ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80" alt="Cappuccino with coffee beans on a table">
+         <h1 class="compName">Coffee Express</h1>
+         <p><span class="moto1"><strong>Your Coffee.</strong></span><span class="moto2"><em> Our Passion.</em></span></p>
+         <nav id="nav-bar">
+             <ul class="navs">
+                 <a class="nav-link" href="#about"><button>About Us</button></a>
+                 <a class="nav-link" href="#video"><button>Videos</button></a>
+                 <a class="nav-link" href="#productSelect"><button>Products</button></a>
+             </ul>
+         </nav>
+     </header>
+ 
+     <!--<div class="image-container">
+             insert picture here?
+         </div> -->
+   
+     <section id="about">
+         <h2 class="about">About Our Family</h2>
+         <p class="about">We've been cultivating our craft since 1990 and we continue to improve on it! Our love for coffee has taken us to many different places around the world and this has allowed us to create the perfect blends that you enjoy.</p>
+         <hr>
+         <div class="iconFlex">
+             <div class="cardContainer" id="icon1">
+                 <i class="fas fa-coffee"></i>
+             </div>
+             <span class="desc1">Our blends are specially made from countries around the world for your enjoyment. We have a blend for everyone!</span>
+ 
+             <div class="cardContainer" id="icon2">
+                 <i class="fas fa-globe-americas"></i>
+             </div>
+             <span class="desc2">We only source high quality beans from countries all over the world. Some of our favorites countries are: Peru, Costa Rica, South Africa, and many more.</span>
+ 
+            <div class="cardContainer" id="icon3">
+                 <i class="fas fa-shipping-fast"></i>
+             </div> 
+             <span class="desc3">Coffee is our passion, and we know that you love our coffee. All of our beans are roasted and immediately shipped to your front door so that you can enjoy the best cup of coffee, your way.</span>
+         </div>
+         <hr>
+ 
+     </section>
+ 
+     <section id="video">
+             <h2>How to Make a Cappuccino</h2>
+             <iframe class="video1" src="https://www.youtube.com/embed/2Ao5b6uqI40" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </section>
+
+   <hr>
+
+    <section id="productSelect">
+        <h2>The Coffee - Our Passion</h2>
+        <div class="products">
+
+            <div class="card" id="coffee1">
+            <img class="product1" src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="House Blend Coffee Bag">
+            <div class="container">
+                <p>House Blend 16oz</p>
+                <p>Medium Roast</p>
+                <p>$39.99</p>
+             </div>
+          </div>
+
+          <div class="card" id="coffee2">
+            <img class="product1" src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Columbian Blend Coffee Bag">
+            <div class="container">
+                <p>Columbian Blend 16oz</p>
+                <p>Medium Roast</p>
+                <p>$39.99</p>
+            </div>
+          </div>
+
+          <div class="card" id="coffee3">
+                <img class="product1" src="https://images.unsplash.com/photo-1559056199-96c307526265?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Aztec Blend Coffee Bag">
+                <div class="container">
+                    <p>Aztec Blend 16oz</p>
+                    <p>Medium-Dark Roast</p>
+                    <p>$39.99</p>
+                </div>
+            </div>
+
+          <div class="card" id="coffee4">
+                <img class="product1" src="https://images.unsplash.com/photo-1559056199-96c307526265?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Costa Rican Blend Coffee Bag">
+                <div class="container">
+                    <p>Costa Rican Blend 16oz</p>
+                    <p>Dark Roast</p>
+                    <p>$39.99</p>
+                </div>
+            </div>
+
+            <div class="card" id="coffee5">
+                <img class="product1" src="https://images.unsplash.com/photo-1559056199-96c307526265?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Costa Rican Blend Coffee Bag">
+                <div class="container">
+                    <p>French Roast Blend 16oz</p>
+                    <p>Dark Roast</p>
+                    <p>$39.99</p>
+                </div>
+            </div>
+
+          <div class="card" id="coffee6">
+                <img class="product1" src="https://images.unsplash.com/photo-1559056199-5a47f60c5053?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="The Family! Coffee Bags">
+                <div class="container">
+                    <p>The Family!</p>
+                    <p>All of our best blends (6-16oz bags!)</p>
+                    <p>$119.99</p>
+                </div>
+              </div>
+        </div>   
+   </section>
+
+   <hr>
+
+     <form action="https://www.freecodecamp.org/email-submit">
+        <h2>Subscribe to our monthly newletter</h2>
+        <p>Stay up to date with the latest happenings and greatest coffee that we are brewing at Coffee Express</p>
+        <div>
+            <input id="email" type="email" placeholder="Email" alt="Email Input" required>
+            <input id="submit" type="submit">
+        </div>
+         
+     </form>
+     <!-- <div class="parallax"></div> -->
+<hr>
+     <footer>
+         <div class="socialMed">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+         </div>
+     </footer>
+ </body>
+ </html>
+ <!-- 1335 23Jun19: finished section 1 and the about the company part. still need to touch up section 2 and section 3. Before i move on to section 2 and 3, I need to come up with a solution for the navigation buttons. previously had a gradient but wasn't satisfied with the gradient. going to move to a :hover style rather than gradient. will continue later. -->
+ 
+ <!-- https://images.unsplash.com/photo-1559056199-641a0ac8b55e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80 IMAGE OF A COFFEE BAG THAT I CAN USE FOR DIFFERENT COFFEE PRODUCTS. COULD MAYBE 'PHOTOSHOP' THE BRAND OFF AND PUT COFFEE EXPRESS ON INSTEAD. -->
+ 
+ <!-- https://images.unsplash.com/photo-1559056199-96c307526265?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80 IMAGE OF A COFFEE BAG THAT I CAN USE FOR DIFFERENT COFFEE PRODUCTS. COULD MAYBE 'PHOTOSHOP' THE BRAND OFF AND PUT COFFEE EXPRESS ON INSTEAD.-->
+ 
+ <!-- https://images.unsplash.com/photo-1559056199-5a47f60c5053?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80 IMAGE OF BULK COFFEE BAGS THAT I CAN USE FOR DIFFERENT COFFEE PRODUCTS. COULD MAYBE 'PHOTOSHOP' THE BRAND OFF AND PUT COFFEE EXPRESS ON INSTEAD. -->
+ 
+ <!-- GIMP SOFTWARE CAN BE USED AS A PHOTOSHOP ALTERNATIVE -->
+
+ <!-- 1113 30JUN19: I HAVE FINISHED WITH THE MOBILE VERSION OF THE SITE. ALL THAT IS LEFT TO DO IS TO CREATE A MEDIA QUERY FOR DEVICES THAT HAVE A SCREEN SIZE LARGER THAN A TABLET SO >768PX. AFTER I HAVE REFORMATTED THE SITE USING MEDIA QUERIES FOR LAPTOPS TO DESKTOP SCREENS, I CAN GO BACK AND MAKE MEDIA QUERIES TO MAKE FINE ADJUSTMENTS AND TUNE ASPECTS TO SPECIFIC DEVICE SCREEN SIZES.  -->
+
+ <!-- 01JUL19: I HAVE FINISHED WITH THE ENTIRE SITE. I AM SATISIFIED WITH THE SITE. I COULD ADD MORE THINGS TO ESSENTIALLY POLISH IT OFF OR TO PLAY AROUND WITH DIFFERENT THEMES BUT I AM HAPPY WITH THIS AND I WOULD CONSIDER THIS TO BE COMPLETE! :D -->
